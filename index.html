@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>小栋官网</title>
+    <style>
+        /* 全局重置与背景设置 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body, html {
+            height: 100%;
+            background-color: #070b11; /* 深色背景 */
+            background-image: 
+                linear-gradient(rgba(0, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px; /* 模拟网格背景 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center;     /* 垂直居中 */
+            overflow-y: auto;        /* 内容超长时允许滚动 */
+        }
+
+        /* 主容器 */
+        .wrapper {
+            width: 90%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        /* 顶部标题 */
+        .title {
+            color: #00ffff;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+            letter-spacing: 2px;
+        }
+
+        /* 蓝框主面板 */
+        .main-panel {
+            width: 100%;
+            border: 2px solid #00ffff;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: rgba(5, 15, 25, 0.85);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), inset 0 0 15px rgba(0, 255, 255, 0.2);
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* 按钮之间的间距 */
+            margin-bottom: 20px;
+        }
+
+        /* 公告标题 */
+        .notice-title {
+            color: #00ffff;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        /* 公告文字 */
+        .notice-text {
+            color: #ffffff;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        /* 按钮通用样式 */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border-radius: 25px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* 绿色按钮 */
+        .btn-green {
+            background-color: #00cc55;
+        }
+
+        /* 橙色按钮 */
+        .btn-orange {
+            background-color: #ff5500;
+        }
+
+        /* 底部提示 */
+        .footer-tip {
+            width: 100%;
+            border: 1px solid #00ffff;
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+            color: #8899aa;
+            font-size: 13px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- 顶部标题 -->
+        <div class="title">小栋官网</div>
+
+        <!-- 发光蓝框 -->
+        <div class="main-panel">
+            <div class="notice-title">🚀 小栋官网公告</div>
+            
+            <div class="notice-text">
+                ☆小栋全项目公告声明☆<br>
+                本系列作品仅供学习研究，使用者的任何行为与应用无关，请在24小时内删除本应用[下载代表同意本协议]<br>
+                若有侵权违法行为，请联系我方删除内容<br>
+                本卡网均为自愿捐赠<br>
+                有事联系客服 恶意投诉拉黑删卡处理
+            </div>
+
+            <!-- 按钮组 -->
+     <a href="https://q3g.66url.cn/djW" class="btn btn-green">💳 官方卡网购买点我</a>
+        </div>
+
+        <!-- 底部提示 -->
+        <div class="footer-tip">
+            点击上方任意按钮即可跳转界面
+        </div>
+    </div>
+
+</body>
+</html>
